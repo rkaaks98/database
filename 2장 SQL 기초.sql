@@ -11,6 +11,8 @@ CREATE TABLE `User1` (
     `age`	INT
 );
 
+select * from user1;
+
 
 DROP TABLE `User1`;
  
