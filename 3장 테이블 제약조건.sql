@@ -13,7 +13,7 @@ insert into `user2` values ('A102','김춘추','1972-11-23','경남 경주시');
 insert into `user2` values ('A103','장보고','1978-03-01','전남 완도군');
 insert into `user2` values ('A105','강감찬','1979-08-16','서울시 관악구');
 insert into `user2` values ('A104','이순신','1981-05-23','부산시 진구');
-select * from `user2`;
+user1select * from `user2`;
 #---------------------------------------------------------------------
 create table `user3`(
 		`uid`	varchar(10) primary key,
