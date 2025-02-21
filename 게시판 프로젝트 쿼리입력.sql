@@ -1,0 +1,1 @@
+boardstudydbuser3select * from `user` where `uid`='wnstj0505' and `pass`=SHA2(1234,256);
