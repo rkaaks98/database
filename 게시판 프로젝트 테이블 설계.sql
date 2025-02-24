@@ -1,4 +1,4 @@
-#날짜 : 2025/02/17
+board#날짜 : 2025/02/17
 #이름 : 김준서
 #내용 : 게시판 프로젝트 테이블 설계
 
@@ -6,7 +6,7 @@
 -- 데이터베이스 생성
 DROP DATABASE IF EXISTS `board2`;
 CREATE DATABASE `board2`;
-USE `board2`;board2boardboardboardarticle
+USE `board2`;
 
 -- 사용자 생성 및 권한 부여
 DROP USER IF EXISTS 'board2'@'%';
