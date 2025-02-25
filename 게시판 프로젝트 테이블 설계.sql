@@ -1,4 +1,4 @@
-board#날짜 : 2025/02/17
+shoppingboard#날짜 : 2025/02/17
 #이름 : 김준서
 #내용 : 게시판 프로젝트 테이블 설계
 
@@ -77,9 +77,44 @@ CREATE TABLE `File` (
 );
 
 
+#제목 검색
+SELECT
+ 	a.*,
+	u.nick
+from article AS a
+JOIN `user` AS u ON a.writer = u.uid
+WHERE `title` LIKE '%?%';
+
+#내용 검색
+SELECT
+ 	a.*,
+	u.nick
+from article AS a
+JOIN `user` AS u ON a.writer = u.uid
+WHERE `content` LIKE '%?%';
+
+#글쓴이 검색
+SELECT a.*,u.nick
+from article AS a
+JOIN `user` AS u ON a.writer = u.uid
+WHERE `nick` LIKE '%김준서%'
+ORDER BY `no` DESC
+LIMIT 0, 10;
 
 
+SELECT COUNT(*) FROM `article` AS a
+JOIN `user` AS u ON a.writer = u.uid
+WHERE `title` LIKE '%준서%';
 
+SELECT COUNT(*) FROM `article` AS a
+JOIN `user` AS u ON a.writer = u.uid
+WHERE `nick` LIKE '%준서%';
+
+
+SELECT * FROM articles 
+WHERE writer LIKE '%김준서%'
+ORDER BY article_no DESC
+LIMIT 0, 10;
 
 
 
